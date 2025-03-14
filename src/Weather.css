@@ -1,0 +1,80 @@
+
+.weather-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #0c0f0f);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #df0c64;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ff4d94;
+  }
+  .error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  
+  .weather-info {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .weather-info h3 {
+    margin: 10px 0;
+  }
+  
+  .weather-info p {
+    font-size: 1.2rem;
+  }
+  
+
+  /* Add responsive breakpoints */
+@media (max-width: 768px) {
+    .weather-container {
+      padding: 10px;
+    }
+  
+    .weather-info {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    input, button {
+      width: 50%;
+    }
+  }
